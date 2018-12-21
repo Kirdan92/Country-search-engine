@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Country search engine</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main>
+		<h1>Country search engine</h1>
+		<button id="search">Search a country</button>
+		<input id="country-name" type="text" />
+		<h2>List of countries</h2>
+		<ul id="countries">		
+
+		</ul>
+	</main>
+	<script id="country-template" type="x-tmpl-mustache">
+	    <li>
+			<div class="header">
+		        <div class="flag" style="background-image: url({{ flag }})"></div>
+		        <h2>{{ name }}</h2>
+	        </div>
+	        <div class="info-container">
+				<div class="bar"><h3>Background Information:</h3></div>
+				<div class="country-detials">
+					<div class="row">
+						<p class="left-para">Capital:</p><p class="right-para">{{ capital }}</p>
+					</div>
+					<div class="row">
+						<p class="left-para">Population:</p><p class="right-para">{{ population }}</p>
+					</div>
+					<div class="row">
+						<p class="left-para">Land area:</p><p class="right-para">{{ area }} sq.km</p>
+					</div>
+					<div class="row">
+						<p class="left-para">Currency:</p><p class="right-para">{{ currencyName }} ({{ currencyCode }})</p>
+					</div>
+						<div class="row">
+						<p class="left-para">Langueage(s):</p><p class="right-para">{{ language }}</p>
+					</div>
+				</div>
+				<div class="bar"></div>
+	        </div>
+	    </li>
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+html {
+	font-size: 16px;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #c8d6e5;
+	color: #000;
+}
+main {
+	margin: 0 auto;
+	max-width: 1200px;
+	text-align: center;
+	h2 {
+		font-size: 2rem;
+	}
+	button {
+		background-color: #10ac84;
+		border: none;
+		padding: 3px;
+		&:hover {
+			cursor: pointer;
+			color: #10ac84;
+			background-color: #000;
+		}
+	}
+}
+#countries {
+	padding: 0;
+	border-radius: 1px solid #000;
+	border: 2px solid #2e86de;
+	li {
+		list-style-type: none;
+		.header {	
+			padding-left: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			h2 {
+				font-size: 1.9rem;
+				text-align: center;
+				margin-left: 10px;
+			}
+		}
+		.info-container {
+			.bar {
+				text-align: left;
+				padding: 2px;
+				background-color: #2e86de;
+				min-height: 21px;
+				h3 {
+					margin: 0;
+					color: #fff;
+				}
+			}
+			.bar:nth-of-type(even) {
+				margin-bottom: 20px;
+			}
+			.row:nth-child(odd) {
+				background-color: #8395a7;
+			}
+			.row {
+				padding-left: 5px;
+				display: flex;
+				.left-para, .right-para {
+					font-size: 1.1rem;
+					margin: 3px 0;
+				}
+				.left-para {
+					min-width: 120px;
+					display: flex;
+					justify-content: flex-start;
+					font-weight: bold;
+
+				}
+			}
+
+		}
+	}
+}
+.flag {
+	height: 60px;
+	min-width: 100px;
+	background-repeat: no-repeat, repeat;
+  	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+	
+}
